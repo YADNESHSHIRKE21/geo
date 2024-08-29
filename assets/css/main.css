@@ -715,7 +715,7 @@ section,
 
 .hero .info h2 {
   margin-bottom: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 60px;
   font-size: 72px;
   font-weight: 700;
   position: relative;
@@ -750,6 +750,32 @@ section,
   font-size: 18px;
 }
 
+#location,
+#crop {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 12px; /* Reduced font size */
+  letter-spacing: 1px;
+  display: inline-block; /* Ensures input fields do not take the full width */
+  padding: 5px 10px; /* Reduced padding */
+  border-radius: 4px;
+  transition: 0.3s; /* Reduced transition time */
+  margin: 5px; /* Adjust margin for spacing */
+  width: 175px;
+  height: 50px;
+  border: none;
+  text-align: center; /* Center text inside the input */
+}
+.btnContainer {
+  display: flex;
+  flex-direction: column; /* Stacks children vertically */
+  align-items: center; /* Centers children horizontally */
+  width: 100%; /* Full width of the parent container */
+  display: inline-block;
+}
+
 .hero .info .btn-get-started {
   color: var(--contrast-color);
   background: var(--accent-color);
@@ -757,48 +783,22 @@ section,
   font-weight: 500;
   font-size: 12px; /* Reduced font size */
   letter-spacing: 1px;
-  display: inline-block; /* Change to inline-block to fit the text */
+  display: inline-block; /* Changed to inline-block to fit the text */
   padding: 5px 10px; /* Reduced padding */
   border-radius: 4px;
   transition: 0.3s; /* Reduced transition time */
-  margin: 5px; /* Adjust margin for spacing */
+  margin: 20px 0 5px 0; /* Top margin for spacing */
   width: 100px;
-  align-items: center;
+  text-align: center; /* Center text inside the button */
+  margin: 0 auto;
 }
-#location {
-  color: var(--contrast-color);
-  background: var(--accent-color);
-  font-family: var(--heading-font);
-  font-weight: 500;
-  font-size: 12px; /* Reduced font size */
-  letter-spacing: 1px;
-  display: inline-block; /* Change to inline-block to fit the text */
-  padding: 5px 10px; /* Reduced padding */
-  border-radius: 4px;
-  transition: 0.3s; /* Reduced transition time */
-  margin: 5px; /* Adjust margin for spacing */
-  width: 175px;
-  height: 50px;
-  align-items: center;
-  border: none;
+.input-group {
+  display: flex; /* Align inputs horizontally */
+  justify-content: center; /* Centers inputs within the group */
+  gap: 10px; /* Adds space between the inputs */
+  margin-bottom: 20px; /* Space below the input group */
 }
-#crop {
-  color: white;
-  background: var(--accent-color);
-  font-family: var(--heading-font);
-  font-weight: 500;
-  font-size: 12px; /* Reduced font size */
-  letter-spacing: 1px;
-  display: inline-block; /* Change to inline-block to fit the text */
-  padding: 5px 10px; /* Reduced padding */
-  border-radius: 4px;
-  transition: 0.3s; /* Reduced transition time */
-  margin: 5px; /* Adjust margin for spacing */
-  width: 175px;
-  height: 50px;
-  align-items: center;
-  border: none;
-}
+
 #location:hover {
   background: var(--surface-color);
   color: var(--accent-color);
